@@ -1,0 +1,120 @@
+@import "./variable";
+
+@mixin mainBtn {
+        font-size: 1rem;
+        font-family: 'CeraProLight';
+        font-weight: 500;
+        line-height: 1;
+        color: $textColor;
+        background-color: $primaryBtn;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: .6875rem 1rem .8125rem;
+        font-family: inherit;
+        text-align: center;
+        text-decoration: none;
+        border: .125rem solid $primaryBtn;
+        border-radius: .25rem;
+        outline: none;
+}
+
+@mixin deafaultBtn {
+    color: $primaryBtn; 
+    background-color: transparent;
+    border-color: $secondTextColor;
+}
+
+.mainSection{
+    padding-left: 210px;
+    padding-right: 210px;
+
+    // &::before{
+    //     content: "";
+    //     position: fixed;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     z-index: 998;
+    //     display: block;
+    //     background: rgba(58,70,73,.7);
+    //     // display: none;
+    // }
+
+    h1 {
+        &.pageTitle{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 2.25rem;
+            line-height: 2.8125rem;
+            font-family: "ceraProBold"l;
+            color: $textColor;
+        }
+    }
+
+    .button{
+        @include mainBtn();
+    }
+    .default-button{
+        @include deafaultBtn();
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid transparent; 
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+        border-color: transparent transparent transparent;
+    }
+    .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+        border-color: transparent transparent transparent;
+    }
+}
+
+.button{
+    @include mainBtn();
+}
+.default-button{
+    @include deafaultBtn();
+}
+
+
+// search part in pages
+.search{
+    .search-form{
+        display: block;
+        margin-top: 2.8125rem;
+        .search-field-icon{
+            position: absolute;
+            top: 3.625rem;
+            border: none;
+            background-color: transparent;
+            width: 25px;
+            height: 25px;
+            outline: none;
+        }
+        .search-field{
+            padding: 0.625rem 1.25rem 0.5rem 2.1875rem;
+            width: 100%;
+            min-width: 18.75rem;
+            box-sizing: border-box;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 0.1875rem solid $secondTextColor;
+            color: $secondTextColor;
+            font-family: "CeraPRO-Bold", sans-serif, arial;
+            font-size: 1.5rem;
+            line-height: 1.8125rem;
+            outline: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .mainSection{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

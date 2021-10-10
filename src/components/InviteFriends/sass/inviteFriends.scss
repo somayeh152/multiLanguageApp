@@ -1,0 +1,136 @@
+@import "../../../variable";
+
+.inviteFriends {
+    .bannerSection{
+        .banner-body{
+            height: 18.125rem;
+            background-color: $bannerBackground;
+            padding: 0 2.8125rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            h1{
+                &.banner-title{
+                    font-size: 2.25rem;
+                    line-height: 2.8125rem;
+                    font-family: "ceraProBold";
+                    color: $textColor;
+                }
+            }
+            h2{
+                &.banner-subheader{
+                    margin-top: 0.9375rem;
+                    font-size: 1.125rem;
+                    line-height: 1.5rem;
+                    font-family: "CeraProLight";
+                    color: $secondTextColor;
+                }
+            }
+
+            position: relative;
+            // .holderImage{    
+            //     width: 19.6875rem;
+            //     height: 18.125rem;
+            //     background-image: url('/src/assets/images/banners/explore-banner.jpg');
+            //     background-size: 19.6875rem 18.125rem;
+            //     background-repeat: no-repeat;
+            //     position: absolute;
+            //     right: 0;
+            // }
+        }
+    }
+    .inviteLinkHolder{
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        .form-wrapper{
+            margin: 1rem auto;
+            .inviteTitle{   
+                font-size: 1rem;
+                line-height: 1.1875rem;
+                font-family: "CeraProMedium";
+                color: $textColor;
+                margin-bottom: 1.125rem;
+            }
+            input{
+                // width: 100%;
+                width: 450px;
+                padding: 0.625rem 4.8125rem 0.625rem 1rem;
+                border: 0.125rem solid $tabColor;
+                border-radius: 0.125rem;
+                font-size: 1rem;
+                line-height: 1.125rem;
+                color: $primaryBtn;
+                font-family: 'ceraProLight';
+            }
+            // a{
+            //     // &.link{
+            //     //     position: absolute;
+            //     //     right: 1rem;
+            //     //     top: 50%;
+            //     //     margin-top: -0.625rem;
+            //     //     z-index: 2;
+            //     //     width: 21px;
+            //     //     height: 21px;
+            //     //     // background-image: url("../../assets/images/link.png");
+            //     //     background-position: 0 0;
+            //     //     background-repeat: no-repeat;
+            //     //     cursor: pointer;
+            //     // }
+            // }
+            .socialLinks{
+                display: flex;
+                align-items: baseline;
+                margin-top: 0.625rem;
+                font-size: 1rem;
+                line-height: 1.125rem;
+                color: $tabColor;
+                font-family: 'ceraProLight';
+                ul{
+                    display: flex;
+                    margin-left: 10px;
+                    li{
+                        a{
+                            background-color: $tabColor;
+                            border-radius: 50%;
+                            width: 35px;
+                            height: 35px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 5px;
+                            margin: auto 4px;
+                            i{
+                                color: $whiteBackground;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .inviteFriends{
+        .bannerSection{
+            .banner-body{
+                padding-right: 0.1rem;
+                padding-left: 0.1rem;
+                .holderImage{
+                    display: none;
+                }
+            }
+        }
+        .inviteLinkHolder{
+            .form-wrapper{
+                input{
+                    max-width: 300px;
+                }
+            } 
+        }
+    }
+}

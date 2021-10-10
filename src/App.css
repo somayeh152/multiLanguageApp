@@ -1,38 +1,130 @@
-.App {
+.mainSection {
+  padding-left: 210px;
+  padding-right: 210px;
+}
+
+.mainSection h1.pageTitle {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 2.25rem;
+  line-height: 2.8125rem;
+  font-family: "ceraProBold"l;
+  color: #03314b;
+}
+
+.mainSection .button {
+  font-size: 1rem;
+  font-family: 'CeraProLight';
+  font-weight: 500;
+  line-height: 1;
+  color: #03314b;
+  background-color: #2CE080;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: .6875rem 1rem .8125rem;
+  font-family: inherit;
   text-align: center;
+  text-decoration: none;
+  border: 0.125rem solid #2CE080;
+  border-radius: .25rem;
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainSection .default-button {
+  color: #2CE080;
+  background-color: transparent;
+  border-color: #3a4649;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mainSection .nav-tabs {
+  border-bottom: 1px solid transparent;
+}
+
+.mainSection .nav-tabs .nav-item.show .nav-link, .mainSection .nav-tabs .nav-link.active {
+  border-color: transparent transparent transparent;
+}
+
+.mainSection .nav-tabs .nav-link:focus, .mainSection .nav-tabs .nav-link:hover {
+  border-color: transparent transparent transparent;
+}
+
+.button {
+  font-size: 1rem;
+  font-family: 'CeraProLight';
+  font-weight: 500;
+  line-height: 1;
+  color: #03314b;
+  background-color: #2CE080;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: .6875rem 1rem .8125rem;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+  border: 0.125rem solid #2CE080;
+  border-radius: .25rem;
+  outline: none;
+}
+
+.default-button {
+  color: #2CE080;
+  background-color: transparent;
+  border-color: #3a4649;
+}
+
+.search .search-form {
+  display: block;
+  margin-top: 2.8125rem;
+}
+
+.search .search-form .search-field-icon {
+  position: absolute;
+  top: 3.625rem;
+  border: none;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  outline: none;
+}
+
+.search .search-form .search-field {
+  padding: 0.625rem 1.25rem 0.5rem 2.1875rem;
+  width: 100%;
+  min-width: 18.75rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 0.1875rem solid #3a4649;
+  color: #3a4649;
+  font-family: "CeraPRO-Bold", sans-serif, arial;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mainSection {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

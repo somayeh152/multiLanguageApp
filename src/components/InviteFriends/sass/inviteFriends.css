@@ -1,0 +1,125 @@
+.inviteFriends .bannerSection .banner-body {
+  height: 18.125rem;
+  background-color: #F4F8F9;
+  padding: 0 2.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.inviteFriends .bannerSection .banner-body h1.banner-title {
+  font-size: 2.25rem;
+  line-height: 2.8125rem;
+  font-family: "ceraProBold";
+  color: #03314b;
+}
+
+.inviteFriends .bannerSection .banner-body h2.banner-subheader {
+  margin-top: 0.9375rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-family: "CeraProLight";
+  color: #3a4649;
+}
+
+.inviteFriends .inviteLinkHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.inviteFriends .inviteLinkHolder .form-wrapper {
+  margin: 1rem auto;
+}
+
+.inviteFriends .inviteLinkHolder .form-wrapper .inviteTitle {
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  font-family: "CeraProMedium";
+  color: #03314b;
+  margin-bottom: 1.125rem;
+}
+
+.inviteFriends .inviteLinkHolder .form-wrapper input {
+  width: 450px;
+  padding: 0.625rem 4.8125rem 0.625rem 1rem;
+  border: 0.125rem solid #6D787E;
+  border-radius: 0.125rem;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #2CE080;
+  font-family: 'ceraProLight';
+}
+
+.inviteFriends .inviteLinkHolder .form-wrapper .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: 0.625rem;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #6D787E;
+  font-family: 'ceraProLight';
+}
+
+.inviteFriends .inviteLinkHolder .form-wrapper .socialLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.inviteFriends .inviteLinkHolder .form-wrapper .socialLinks ul li a {
+  background-color: #6D787E;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  margin: auto 4px;
+}
+
+.inviteFriends .inviteLinkHolder .form-wrapper .socialLinks ul li a i {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 425px) {
+  .inviteFriends .bannerSection .banner-body {
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+  }
+  .inviteFriends .bannerSection .banner-body .holderImage {
+    display: none;
+  }
+  .inviteFriends .inviteLinkHolder .form-wrapper input {
+    max-width: 300px;
+  }
+}
+/*# sourceMappingURL=inviteFriends.css.map */
